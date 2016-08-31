@@ -14,9 +14,8 @@ begin
 	0: oInstruction = { `STO ,`R1,16'd1};
 	1: oInstruction = { `STO ,`R1,16'd1};
 	2: oInstruction = { `STO ,`R2,16'd1};
-	3: oInstruction = { `NOP, 24'd4000};
-	4: oInstruction = { `ADD, `R1, `R1,`R2}; 
-	5: oInstruction = { `JMP, 8'd5, 16'b0};
+	3: oInstruction = { `ADD, `R1, `R1,`R2};
+	4: oInstruction = { `JMP, 8'd5, 16'b0};
 	default:
 		oInstruction = { `LED ,  24'b10101010 };		//NOP
 	endcase	
